@@ -13,32 +13,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static('node_modules'));
 
 
-var email 	= require("emailjs");
-var server 	= email.server.connect({
-   user:    "Shannon.gabriel22@gmail.com",
-   password:"boubies2017",
-   host:    "smtp.gmail.com",
-   ssl:     true
+
+
+var smtpTransport = nodemailer.createTransport({
+    service: "gmail",
+    host: "smtp.gmail.com",
+    auth: {
+        user: "Shannon.gabriel22@gmail.com",
+        pass: "boubies2017"
+    }
 });
-
-// send the message and get a callback with an error or details of the message that was sent
-
-// server.send({
-//    text:    "i hope this works",
-//    from:    "you <username@your-email.com>",
-//    to:      "someone <someone@your-email.com>, another <another@your-email.com>",
-//    cc:      "else <else@your-email.com>",
-//    subject: "testing emailjs"
-// }, function(err, message) { console.log(err || message); });
-//
-// var smtpTransport = nodemailer.createTransport({
-//     service: "gmail",
-//     host: "smtp.gmail.com",
-//     auth: {
-//         user: "Shannon.gabriel22@gmail.com",
-//         pass: "boubies2017"
-//     }
-// });
 
 
 app.get('/',function(req,res){
@@ -51,7 +35,7 @@ app.get('/sendmail',function(req,res){
         text : req.query.text
     }
     console.log(mailOptions);
-    server.sendMail(mailOptions, function(error, response){
+    smtpTransport.sendMail(mailOptions, function(error, response){
      if(error){
             console.log(error);
         res.end("error");
