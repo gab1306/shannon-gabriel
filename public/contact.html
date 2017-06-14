@@ -47,7 +47,7 @@
                       <br><br>
                       <form class="form-horizontal">
                         <div class="form-group">
-                        <input id="to" value="gabmimouni@gmail.com" type="hidden"/>
+                        <input id="to" value="Shannon.gabriel22@gmail.com" type="hidden"/>
                           <label for="exampleInputName2" style="color:dimgrey; font-family:Raleway; font-size:18px;">Nom</label>
                           <input id="subject" type="text" class="form-control" id="exampleInputName2" placeholder="Votre Nom">
                         </div>
@@ -100,7 +100,7 @@
                                      subject=$("#subject").val();
                                      text=$("#content").val();
                                      $("#message").text("Sending E-mail...Please wait");
-                                     $.get("http://localhost:8000/sendmail",{to:to,subject:subject,text:text},function(data){
+                                     $.get("https://shannon-gabriel.herokuapp.com/contact",{to:to,subject:subject,text:text},function(data){
                                      if(data=="sent")
                                      {
 

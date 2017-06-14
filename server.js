@@ -17,14 +17,14 @@ var smtpTransport = nodemailer.createTransport({
     service: "gmail",
     host: "smtp.gmail.com",
     auth: {
-        user: "gabmimouni@gmail.com",
-        pass: "manchester777"
+        user: "Shannon.gabriel22@gmail.com",
+        pass: "boubies2017"
     }
 });
 
 
 app.get('/',function(req,res){
-    res.sendfile('localhost:8000/sendmail.html');
+    res.sendfile('https://shannon-gabriel.herokuapp.com/contact.html');
 });
 app.get('/sendmail',function(req,res){
     var mailOptions={
@@ -49,4 +49,3 @@ app.get('/sendmail',function(req,res){
 
 
 app.listen(process.env.PORT || '8080');
- 
