@@ -24,7 +24,7 @@ var smtpTransport = nodemailer.createTransport({
 
 
 app.get('/',function(req,res){
-    res.sendfile('https://shannon-gabriel.herokuapp.com/contact.html');
+    res.sendfile('https://shannon-gabriel.herokuapp.com/sendmail.html');
 });
 app.get('/sendmail',function(req,res){
     var mailOptions={

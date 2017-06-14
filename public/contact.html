@@ -100,7 +100,7 @@
                                      subject=$("#subject").val();
                                      text=$("#content").val();
                                      $("#message").text("Sending E-mail...Please wait");
-                                     $.get("https://shannon-gabriel.herokuapp.com/contact",{to:to,subject:subject,text:text},function(data){
+                                     $.get("https://shannon-gabriel.herokuapp.com/sendmail",{to:to,subject:subject,text:text},function(data){
                                      if(data=="sent")
                                      {
 
