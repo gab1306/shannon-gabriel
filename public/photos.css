@@ -95,7 +95,6 @@ div.highlightTextOut a:before, div.highlightTextIn a:before
     top: 0px;
     left: 0px;
     padding: 10px;
-    overflow: visible;
     content: attr(alt);
     transition: all 0.3s;
     transform: scale(0.8);
@@ -108,7 +107,6 @@ div.container
     /*margin: 0 auto;*/
 	 padding: 1em 3em;
 	text-align: center;
-  position: fixed;
   margin-left: 34px;
 
 }
@@ -131,7 +129,6 @@ html, body {
 
 body {
   background-color: white;
-  overflow: hidden;
 }
 
 img {

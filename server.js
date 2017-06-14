@@ -1,13 +1,12 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
+var app = express();
 var mongoose = require('mongoose');
 path = require('path');
 
 
-var app = express();
-mongoose.connect(process.env.CONNECTION_STRING||'mongodb://localhost/wedding');
-
+mongoose.connect(process.env.CONNECTION_STRING||'mongodb://localhost/gab');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -48,7 +47,6 @@ app.get('/sendmail',function(req,res){
 
 
 
+
 app.listen(process.env.PORT || '8080');
-// app.listen('8000', function(){
-//  console.log("yallah")
-// });
+ });

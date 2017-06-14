@@ -1,9 +1,16 @@
 body{
-	background: url(sg.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
+	background: url(sg.jpg) ;
+	/*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
+	background-repeat:no-repeat;
+background-size:contain;
+background-position:center;
+  overflow-x:hidden;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
 	 margin: 0;
@@ -169,7 +176,7 @@ div.container
 	 padding: 1em 3em;
 	text-align: center;
   position: fixed;
-  margin-left: 115px;
+  /*margin-left: 115px;*/
 
 }
 

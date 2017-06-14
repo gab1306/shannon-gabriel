@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Shannon & Gab PHOTOS</title>
+    <!-- Mobile Specific Metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="photos.css">
+    <link rel="stylesheet" href="media-queries.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
@@ -17,12 +21,20 @@
   <body>
 
     <header id="home">
-      <div class="container gray highlightTextIn">
-             <a alt="ACCEUIL" href="index.html" style="color:dimgrey;">ACCEUIL</a>
-             <a alt="PROGRAMME" href="programme.html" style="color:dimgrey;">PROGRAMME</a>
-             <a alt="CONTACT" href="contact.html" style="color:dimgrey;">CONTACT</a>
-             <a alt="PHOTOS" href="photos.html" style="color:dimgrey;">PHOTOS</a>
 
+            <nav id="nav-wrap">
+
+               <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+      	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+               <ul id="nav" class="nav">
+                  <li class="current"><a class="smoothscroll" href="index.html">ACCUEIL</a></li>
+                  <li><a class="smoothscroll" href="programme.html">PROGRAMME</a></li>
+      	        <li><a class="smoothscroll" href="contact.html">CONTACT</a></li>
+                  <li><a class="smoothscroll" href="photos.html">PHOTOS</a></li>
+               </ul> <!-- end #nav -->
+
+            </nav> <!-- end #nav-wrap -->
              <div class="container">
     <div class="row">
 		<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="IMG_777.jpg" /></div>

@@ -1,4 +1,6 @@
 
+
+
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
 	 margin: 0;
 	 padding: 0;
@@ -138,11 +140,12 @@ p{
 }
 
 h1,h2,h3 {
-	margin:0 0 35px 0;
+	margin:auto;
 	font-family: 'Patua One', cursive;
 	text-transform: uppercase;
 	letter-spacing:1px;
   padding-top: 69px;
+  text-align: center;
 }
 
 p{
@@ -159,11 +162,13 @@ a:hover,a:focus{
 }
 
 #contact{
-	background: url(sg.jpg) no-repeat center center fixed;
+	background: url(sg.jpg) ;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size:cover;
   background-size:cover;
+
+  
 	color:#f4f4f4;
 	padding-bottom:80px;
   height: 722px;
@@ -175,24 +180,12 @@ textarea.form-control{
 
 
 
-footer {
-   padding-top: 48px;
-   margin-bottom: 48px;
-   color: #303030;
-   font-size: 14px;
-   text-align: center;
-   position: relative;
-}
 
-footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #fff; }
+
 
 /* copyright */
-footer .copyright {
-    margin: 0;
-    padding: 0;
- }
-footer .copyright li {
+
+ .copyright  {
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -202,37 +195,21 @@ footer .copyright li {
     padding-top: 50px;
     font-family: serif;
 }
-.ie footer .copyright li {
-   display: inline;
-}
-footer .copyright li:before {
-    content: "\2022";
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #095153;
-}
-footer .copyright  li:first-child:before {
-    display: none;
-}
+
+
+
 
 /* social links */
-footer .social-links {
-   margin: 18px 0 30px 0;
-   padding: 0;
-   font-size: 30px;
-}
-footer .social-links li {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    margin-left: 42px;
+
+.social-links{
+
+  font-size: 30px;
     color: #F06000;
     font-size: 55px;
 }
 
 
 
-footer .social-links li:first-child { margin-left: 0; }
 
 
 div.highlightTextIn a
@@ -288,7 +265,6 @@ div.container a
     z-index: 0;
     cursor: pointer;
 }
-
 
 .container4 {
   display: flex;

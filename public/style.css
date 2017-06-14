@@ -1,10 +1,31 @@
+@media only screen and (max-width: 767px) {
+
+   /* mobile navigation
+   -------------------------------------------------------------------- */
+   body {
+     background: url(IMG_2017.jpg) no-repeat center center fixed;
+   	-webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     overflow-x:hidden;
+
+   }
+}
+
 body {
   background: url(IMG_2017.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
+	/*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
+  background-repeat:no-repeat;
+background-size:contain;
+background-position:center;
   overflow-x:hidden;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
@@ -133,11 +154,9 @@ div.container a
 
 
 
-canvas{
-  width: 900px;
-  height: 200px;
-  position: fixed;
+  canvas{
   background: transparent;
-  margin: 500px auto;
-  margin-left: 300px;
+  margin: 24px 120px;
+  margin-top: 470px;
+  padding: 0;
 }
