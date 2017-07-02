@@ -97,12 +97,12 @@
 
                                      text=$("#content").val();
 
-                                     $("#message").text("Sending E-mail")
+                                     $("#message").text("Email Envoye")
                                      $.get("https://shannon-gabriel.herokuapp.com/sendmail",{to:to,subject:subject,text:text},function(data){
                                      if(data=="sent")
                                      {
 
-                                         $("#message").empty().html("Email envoye");
+                                         $("#message").empty().html("Email Envoye");
 
                                      }
 
