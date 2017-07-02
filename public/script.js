@@ -1,19 +1,19 @@
 var ringer = {
   countdown_to: "17:00 10/22/2017",
   rings: {
-    'DAYS': {
+    'JOURS': {
       s: 86400000, // mseconds in a day,
       max: 365
     },
-    'HOURS': {
+    'HEURES': {
       s: 3600000, // mseconds per hour,
       max: 24
     },
     'MINUTES': {
       s: 60000, // mseconds per minute
       max: 60
-    }
-    
+    },
+
    },
   r_count: 5,
   r_spacing: 16, // px
