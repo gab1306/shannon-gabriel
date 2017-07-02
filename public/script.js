@@ -14,7 +14,7 @@ var ringer = {
       max: 60
     },
     'SECONDES': {
-      s: 600, // mseconds per minute
+      s: 60, // mseconds per minute
       max: 60
     }
 
