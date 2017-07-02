@@ -13,6 +13,10 @@ var ringer = {
       s: 60000, // mseconds per minute
       max: 60
     },
+    'SECONDES': {
+      s: 6000, // mseconds per minute
+      max: 60
+    }
 
    },
   r_count: 5,
