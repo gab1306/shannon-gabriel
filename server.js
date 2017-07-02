@@ -13,8 +13,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static('node_modules'));
 
 
-
-
 var smtpTransport = nodemailer.createTransport({
     service: "gmail",
     // host: "smtp.gmail.com",
