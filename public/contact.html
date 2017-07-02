@@ -90,9 +90,13 @@
                                $(document).ready(function(){
                                  var from,to,subject,text;
                                  $("#email").click(function(){
+                                  alert("start");
                                     to=$("#to").val();
+                                     alert(to);
                                      subject=$("#subject").val();
+                                     alert(subject);
                                      text=$("#content").val();
+                                     alert(text); 
                                      $("#message").text("Sending E-mail...Please wait");
                                      $.get("https://shannon-gabriel.herokuapp.com/sendmail",{to:to,subject:subject,text:text},function(data){
                                      if(data=="sent")
