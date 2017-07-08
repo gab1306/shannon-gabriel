@@ -198,13 +198,13 @@ div.container a
 .serviceBox .service-icon span{display: inline-block;width: 60px;height: 60px;line-height: 60px;border-radius:3px;background: royalblue;font-size: 30px;color: #fff;margin: auto;position: absolute;top: 0;left: 0;bottom: 0;right: 0;transition: all 0.3s ease-out 0s;}
 .serviceBox .service-icon span i{transition: all 0.3s ease-out 0s;}
 .serviceBox:hover .service-icon span i{transform: rotate(-45deg);}
-.serviceBox .service-content{background: #fff;border: 2px solid #e7e7e7;border-radius: 3px;padding: 140px 15px;position: relative;}
+.serviceBox .service-content{background: #fff;border: 2px solid #B36700;border-radius: 3px;padding: 140px 15px;position: relative;}
 .serviceBox .service-content:before{content: "";display: block;width: 80px;height: 80px;border: 1px solid #e7e7e7;border-radius: 3px;margin: 0 auto;position: absolute;top: -37px;left: 0;right: 0;z-index: -1;transition: all 0.3s ease-out 0s;}
 .serviceBox:hover .service-content:before{transform: rotate(45deg);}
 .serviceBox .title{font-size: 27px;font-weight: 500;color: #324545;text-transform: uppercase;margin: 0 0 25px 0;position: relative;transition: all 0.3s ease-out 0s;}
 .serviceBox:hover .title{color: royalblue;}
 .serviceBox .description{font-size: 20px;font-weight: 500;line-height: 33px;margin-bottom: 0;}
-.serviceBox .read-more{display: block;width: 40px;height: 40px;line-height: 38px;border-radius: 50%;background: #fff;border: 1px solid #e7e7e7;font-size: 14px;color: #c4c2c2;margin: 0 auto;position: absolute;bottom: -17px;left: 0; right: 0;transition: all 0.3s ease-out 0s;}
+.serviceBox .read-more{display: block;width: 185px;height: 40px;line-height: 38px;border-radius: 50%;background: #fff;border: 1px solid #e7e7e7;font-size: 14px;color: #c4c2c2;margin: 0 auto;position: absolute;bottom: -17px;left: 0; right: 0;transition: all 0.3s ease-out 0s;}
 .serviceBox .read-more:hover{border: 1px solid #727cb6;color: #727cb6;text-decoration: none;}
 .serviceBox.green .service-icon span{ background:lightpink; }
 .serviceBox.blue .service-icon span{ background: #3498db; }
